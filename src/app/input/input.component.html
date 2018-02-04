@@ -1,0 +1,14 @@
+<div class="todo-input">
+  <p>
+    <input [value]="title" (keyup.enter)="submitValue($event.target.value)" #inputElement>
+    <button (click)="submitValue(inputElement.value)">
+      Add
+    </button>
+    <!-- <button (click)="submitValue(inputElement.value)">
+      Remove
+    </button> -->
+  </p>
+  <p>
+    The title is: {{ title }}.
+  </p>
+</div>
